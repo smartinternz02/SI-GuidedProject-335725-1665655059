@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Summarize</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body
+        {
+        background-image: url("https://blog.text-summarize.com/wp-content/uploads/2020/07/differences-between-extractive-and-abstractive-summary-900x506.jpeg");
+        background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+  <div class="container-fluid">
+      <div class="navbar-header">
+                <a class="navbar-brand" href="https://www.thesmartbridge.com/"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEBAQEhAVFRUWEBAVFhUWFhgVGBUSGxYYGBgXGBgYHSggGB4lHxcaITEhJSkrLzAuFx8zODMtNyguLysBCgoKDg0OGhAQGzcdHSEuLS03LS0rLjItLysrKzU2Ny0tLi0uLzUrLTUuKy0tLS01KzUtLTUtLS0tKy0tLS0tLf/AABEIAMgAyAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQYEBQcDAgj/xABGEAABAwIDBQQHBAcECwAAAAABAAIDBBEFEiEGEzFRYSJBcYEHFDJSkaGxIzNC0RZiwcLh8PE1cpKyJCVjdHWCg5Ois9L/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAgMEBQEG/8QAMxEBAAIBAwEFBQUJAAAAAAAAAAECAwQRITESQVFhoQUTIzLBJDNCgbEUFSJSU3GRouH/2gAMAwEAAhEDEQA/AO4oiICIiAihEEooUoCIiAiIgIiICIiAii6lNwREQEREBERAREQEREBERBCKUQQilQgIiICIiAiL4mlDGlzjYAXJXkztzImSQNBcTYAakqt4ltCTdsWg948T4DuWLiFdJVPDGA5b6N59StthuAMZZ0lnO5fhH5rlXz5dTaaYeK+KG8z0Vl7nvu4lzuup/otjgOIuZI1hJLXG1j3Husrc1oGgCr20FEGujlaLEvANu88QVVbR5NP8Wtt5jq87O3KxooCldtYIiICIiAiIgIiICIiAiIgIiIIREQEREBVTGK51RIIo9W3sLfidz8FsdpK/IzdtPacNejf4/mvrZ/Dd23eOHbd/4t5Lm6i1s+T3NOnfP0RnmdmThWGtgbzceJ/YOiz0Rb8eOtKxWvSEhYOKx5t03nMz5XJ+iz14Obd7f1QT5nT6X+K8yR2q7eI90RFYCIiAiIgIiICIiAihAglERAREQQilEEL4lkDWlx4AElei0e1FTljEY4uOv90aqnPljHjmzyZ2hgYZEaqodK8dkG9v8rf55K1LAwWk3ULQeJ7R8T/Nl5Y7jUdJGHPuSTZjBxcen5qvQ4Jinja3KE2rSvatxDaIqG7b+RjhvKMtaebiD826qz4Lj0FWLxv1A1YdHDy/aF0b6bJSN7RwpxazDkt2azz/AI/Vtl8tHHxUoqGpKKEQSihEEooRBKKEQSiIghERARFTdrttm0pMMLRJN3+6zlfmeija0VjeVuHBfNbs0jeVwe8AXJA+Swo8YhcbMfnPD7MF4B6loIHmtDg+zskwE+IPMrzYiI6Rx8hkGjj/AD1VqjjDQAAABwAFrJEzPk9yUpSdt+1Pl0/6+Y5SfwEeOX9hK9URSUirFeN9WtZ3NLR5AZirMq3hIzVsp5GT/MAsGt/imlPGUbLIsJlE0zOncLkDIy+uVvfbkSSfgFmqV0InboTWJ6vKeBr2lr2hzTxBFwfiqFtHso6mPrVGXDKblgOrereY6LoD3AC54KQbhW4c9sU8dPBRqNLTNXmNp7p74VzZHaUVjMj7CZo7Q7nD3mqxrnW1+Duopm1tN2W5ruA4Mf8A/LuHmrpgGLNq4Wyt0PBzfdd3hWZ8VdoyY/ln0lTpM9u1OHL80eseLZIiLK3iIiAiIgIiIJREQQiIg8apxax5aLkNcQOZtouB4dV2qoppTe07HvJ1v2rkr9ArlG3Oxr4nvqIGl0ZJc5o4xnv072/RZtRWZiJjudr2Pnx1tfHfjtd/0dVjeHNDgbggEEa3C+1x3ZLbeSkAilBki7veYOnMdF0/Ccep6oXhla429ng4eLTqrKZa3Y9XoMunmd43r4tmiIrWFCrQPq9aS7Rrydejv4qzLGrKJkos9t+R4ELNqMM5Iia9Ynd5MMm6LDpsPDNA95HIu4LL4K6s2mOY2eirmD4llrqqhvdrQySP9UEDMzwu648V5bS7aQUgc1jhJL3MabgH9Yjh4cVq/R3hkz5JsQnvmlFm30JBNy63cNAB4KM33tEQ349NNcF8mTiJjjznfuXaspmysdG8Xa5pBHRc5wGodhle+nkP2b3BpPj7D/nY+fJdNVK9JWFZ4m1LR2ozld1YTp8D9SuhpLxvOO3S36vn9fjmKxmp81OfyXUItDsZinrNKwuN3s7DupHA+YsVvVmvSaWms9zbiyRkpF46SlERRWCIiAiIglERBCIiAiIgrOObE0tUS7Ju3n8bNLnq3gVTMQ9HFVGc0MjZLajXdu+enzXWUVVsNLdzdg9pajDG0TvHhPLj7KzGKPQiaw95u9H+LX6rJi9JFWw2khjPk5h+q6sQvl0YPEA+IUfdWjpZfPtDDf7zDEz5cObN9KTu+kH/AHbfuI70pO7qQD/qX/dXQzh8R4xM/wAI/JfcdJG3hG0eDQF72Mn83oj+06P+j/tLmn6dYhNpDTD/AJWPf8+Cg4RjFdpM90bD7zgwW5ZGa/ELqOUKU91M/NMvP3hWn3WOK+sqZgPo+p4CHzHfPHMWYD/d7/NXINtwUorK1iscMebPkzW3vO4sevphLG+N3BzXNPmLLIRSidp3UWiJjaXM9gKp1PWSUz9M+ZpH+0Zf9mZdMXK9qv8ARcT3o4Z4pR+98SD8V1JjrgHoFu1sbzXJH4ocz2baaxfDP4Z9H0iIsLqCIiAiIglERAREQEREBQpRBCIiAiIgIiIIJsgN1KwZZ9y4Zvu3G2b3HHuPQ/I+K9jlGZ2ZyIi8Sc19J8dqiF3OIj4OP5q8bOTZ6SndzhZfxAAKoXpMqA6qYwfgiF/Ekn6WV22OFqGnv7nyuV0c9fsuOZcfS2+25YhuURFznYEREBERBKIiAiIgIiICIiCEREBERAREQF8SxhwLXAEEEEHUEL7RBV6yoqMP1DTPTcr/AGkI5XPtN8f64lT6QoAwlkcjnW0BAaL9SCVcrKvYlsdSzkuyFjjxLDa/lw+S1YsmGZ+LH5x9WDNh1FY+Dbjwnu/tLmEsktXPc9qSV406nQDwXaMPphFFHEODGNb8BZa3BdmKekOdjSX2tncbkDp3BbpT1mpjLtWsbRCHs/R2wb2vO9pSiIsTpCIiAiIglERARV/F9ozFOKWCnfUTZM7mNLWBjL6Fz3aBeWH7VGSqjo5KWSGVzJHEPIIAaLggt0eDr8EFlRVfD9rc9caCWndDJlLm3e14dpmHs8LtufJZ+1OPsw+nM72l3aa1rAbFzj17rAE+SDcotfgta+eFsr4TCXahpc15LdCHXbpryWow7a4S1r6F8Do3hz2tcXNc1zmgOtdvA5TeyCzItVtFir6SB07YDKG3LwHNZlYASXdrj4DmtUNrJmxieXDZWQloeZGyRyWYRfMWNOa1kFqRV3ENpnNmihp6Y1Jkp9+0tkawbu9r9vy+KwYdr6h4nLcNedy5zZft4uw5ozEddOSC4IqpW7XPZDSzto3PZUCINIkY20j/AGWa6nx4L3j2mkZLFHVUUlOJHhjHl7JGZzwaSw9m6CyIqxXbTTx1RpG4e97srnsImjbnjBtn14a9x1WXhW0O9m9Wmgkp5smdrHlrg9neWPbobIN4ircG0czq00fqTwRZxfvYyBCXZRJYfTivE7UVBqJaZuGvc+MBx+2iHYJIa4X01twQWpFpcI2iZNKad8UkE4bm3UgF3N95jgbPC8sV2lEU3q0MD6icNDnRssAxvEZ3u0bxQb9FVf0vcyWCCejlhklmYxocWuaQeLg9ujraadV91u087Ko0jMPe9+Vz2kTRtD4wbZ9eHgdUFnRV2j2imNTFTT0ToDI2RzXGWN4OQAn2PEKxICIiCUREFSrqB762aooamMTtZHHPFIC5jha7LkatNuS+aXFT67Tx11GIpy2RsEzH5436Xe0d7fAr1m2VkFVUVkNWYpZXMt2A5mQMDS17Se1qL30tdfdHs5M6piqqyqEzog/dMZHu2MLhYu4kuP5IK/j1I99diMsX3tPHQzx9SwOzN825hbqvjaWrbiLamdhvDTUDnN6zzMv55WfAlWXDMBqYq2SqfVMeJA1r2CHLdrQQwA5ja1/Oy+avZNraOSjpXiFsj3l5c3eXa4agai3d5BBsIq1tPQMnf7MdKxx62YNPPgufiaRlCyX1Sp9ZZUmsdIYrMLi67xmvo3d6eStOJbM1c9LHSurY8oyh32HttaQWD2+mvNWCWnlNOY943emPKXll2Zrand34dLoNbtPUtlwqplYbtfSPc09Cy4VdqsaqhRU1OaQRNniip2zvla5gzR2BLWAkXHC6z4NlKttE6h9dYWFpYCYNRGc2Zt8/UW5ZVsf0efJQuoqiZsnZDWPbHkyBoGQ2zG5BF0GywnDGU8UMYAcY4Wxh9hmIA59w77LTbINBmxUHUGvkv17DVucOpp2QbuWcSShpAkyZRw7JLb6/HVazZvAqillnfJUskEz3SOaIsh3ptqDmOlhwQYm3zC2CibEGgivpQwEWaDd1h2eA8FhbUmra2CasEJpoZ45JGwF2e4NmHt8QCRcBbnajA56sw7upZE2ORkoaYs5MrCbG+Yaa8Fj1WzlTVAR1daHw5ml0UcIj3ljcBzi4m1wgxMbqZWYvTuhg3zvUJOznbH2d5xu7RTgksldXmolYITRiSLc5s788g9pxsBltwtdZlTgFU6tFY2rjblaY2s3N7RF1y2+fU9VlVWBv9cbWQTCMljWTMLMwlYDcd4yutpdBi039tT/8Pi/9hTD/AO2a3/dKb6lfUGA1La51YathDmiMs3NjuQ4uDc2fj1Xh+j1aKmaqZWxh0jWssae4DGklo9vjrxQTtgLVeEub9564QLcd0W/aeVrKNgQP9YOd96cQnEnOwIyA9LE/NZ2FbPOZP61UVDqiYNLWOLQxkbTxyMbwvzXliWzbzO6qpKg08rwBJ2RJHLbhmYeB6oPLFMdi3sLJ6GewqmNilcxuQSk2a8HMsPG3TjGITTtjc/1B+kjnNbl3uurQdeC9qjZapndDJUV5eYp45GsbGGRjKbm4Bu4nmTpqvWt2fq31hq46yNpEbo2NMGbLGXZrHt9o9UG5wxs7m5qmOJsgccu7JcAyw73AEG/0WwVcpMDqTVQ1NRVMk3TJWtayLd3zgA3OY8grGgIiIJREQEREBERAREQQiIgIiINfiMZL4HCMvyPcdMtwMjh+IjvI+CxKllU8yWzNBZ2WjJocg0zZtHZr9Fu1CnF9lVsUW72teyUSMLQ7KQ0v9ga95d3k2A4DzWLV0LzUGRsR9qHt9jW182t8w0Pnbkt5ZEi8wTiieN2kbHU2jJLyTGM/3dwcwuG91+Pl1WM2SaPdxAlpLm5W3j4GR2bMBrw93S3mrKoXsZPJCcHnLVQR1Bgla9zs5YQ3RrSHZe4tJ714GGoD3vjDgXZdHbuzvsiA427w4N+C3qLz3nXhKcMTtzPDVbmZ0EjXElxIsDlaS3Qlt2kjXUX6rE9XmbvNzBus2WxbuwdA/i3MQdba6cei36JGTYnDE98tNRTzPmcLnK2QB47GVo3IOXTtXzlblSijad5TpTsx13ERF4mlERAREQEREBERBCIiAiIgIiICIiAiIgIiICIiAiIgIiIP/9k=" width="30">
+                <a class="navbar-brand" href="#">Text Summarization</a>
+      </div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/summarize">Summarize</a>
+      </li>
+      <!li class="nav-item">
+        <!a class="nav-link disabled" href="#"><!/a>
+      <!/li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-3">
+    <br><br>
+
+<form action="/summary", method="POST">
+<div class="form-group mb-3">
+      <h3><label class="bg-primary text-white" for="comment">Content :</label></h3>
+      <textarea class="form-control bg-primary text-white" rows="20" id="comment" name="text" placeholder="Enter The Text"></textarea>
+</div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+</div>
+</body>
+</html>
